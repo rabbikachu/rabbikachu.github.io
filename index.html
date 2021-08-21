@@ -6,8 +6,9 @@
     <title>Many Stars!</title>
     <style>
         body {
-            background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
-            background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #f7f7b6);
+            
+            background: radial-gradient(200% 100% at bottom center, #f7f7b6 30%, #e96f92, #75517d, #1b2947 75%);
+            background: radial-gradient(220% 115% at top center, #1b2947 12%, #75517d 40%, #e96f92 65%, #f7f7b6);
             background-attachment: fixed;
         }
 
@@ -22,12 +23,12 @@
         }
 
         #stars {
-            transform: perspective(500px);
+            transform: perspective(520px);
             transform-style: preserve-3d;
             position: fixed;
             perspective-origin: 50% 100%;
             left: 50%;
-            animation: rotate 66s infinite linear;
+            animation: rotate 72s infinite linear;
             bottom: 0;
             z-index: -99;
         }
@@ -50,8 +51,8 @@
 
     <script>
         (function () {
-            let starsCount = 800; 
-            let distance = 800;
+            let starsCount = 814; 
+            let distance = 821;
             let parentStarts = document.getElementById("stars");
             for (let i = 0; i < starsCount; i++) {
                 let childStart = document.createElement("div");
